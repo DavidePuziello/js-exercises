@@ -1,9 +1,8 @@
 import ReactDOM from 'react-dom/client';
 
-function sayHello(name) {
-    return <h1>Hello, {name}!</h1>
-}
+const sum = (a, b) => a + b
+const hi = <h1>The result is {sum(5, 8)}</h1>
 
 let root = ReactDOM.createRoot(document.getElementById("root"))
 
-root.render(sayHello("World"))
+root.render(hi)
